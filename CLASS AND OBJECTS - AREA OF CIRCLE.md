@@ -1,33 +1,48 @@
 # Exp.No:19  
-## CLASS AND OBJECTS - AREA OF CIRCLE
+## 4-A CLASS AND OBJECTS - AREA OF CIRCLE
 
 ---
 
 ### AIM  
-To write a Python program to take the radius from the user and find the area of a circle using the class name `umbrella` and function name `rain`.
+To write Python Program to take the radius from the user and find the area of the circle using class name 'pen' and function name 'stationary'
 
----
 
 ### ALGORITHM
 
-1. Begin the program.  
-2. Create a class named `umbrella`.  
-3. Define a method `rain(self, r)` inside the class `umbrella` that accepts a radius `r` as an argument.  
-4. Inside the `rain` method:  
-   - Calculate the area of a circle using the formula:  
-     \[ \text{Area} = \pi \times r^2 \]  
-   - Use the `math.pi` constant to get the value of π and perform the calculation.  
-   - Print the result, formatted to two decimal places.  
-5. Prompt the user for an integer input to represent the radius of the circle.  
-6. Create an instance of the `umbrella` class and store it in the variable `u`.  
-7. Call the `rain` method of the `umbrella` class, passing the user-provided radius `r` as an argument.  
-8. Terminate the program.
+1.Start the program.
 
----
+2.Define a class called pen.
+
+3.Inside the class, define a method named stationary.
+
+4.In the stationary method, prompt the user to enter the radius of the circle.
+
+5.Convert the user input to a floating-point number.
+
+6.Use the formula area = π * radius² to calculate the area.
+
+7.Display the area to the user.
+
+8.Create an object of the class pen.
+
+9.Call the stationary method using the object.
+
+10.End the program.
+
+
 
 ### PROGRAM
+### REG NO:212223090008
+### NAME:Harinishri S
 
 ```
+import math
+class circle:
+    def area(r):
+        return math.pi*r*r
+r=int(input())
+obj=circle
+print("Area of circle:",round(obj.area(r),2))
 
 
 
@@ -35,9 +50,11 @@ To write a Python program to take the radius from the user and find the area of 
 
 ### OUTPUT
 
+![m4-1res](https://github.com/user-attachments/assets/d61e5533-ecbd-482f-9582-4bd72c222ebf)
 
 
 ### RESULT
+The program successfully calculates the area of a circle using the user-provided radius by applying the formula area = π * r².
 
 
 
