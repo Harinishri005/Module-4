@@ -1,40 +1,35 @@
 # Exp.No:20  
-## SEB - ARITHMETIC CALCULATION USING CLASS
-
----
+## SEB - Place result="You can't divide with 0" to the right place so that program avoids ZeroDivisionError.
 
 ### AIM  
-To write a Python program to perform addition and division operations using a class. The class should be named `Saveetha`, and the function names should be `setvalues` (to set `a` and `b` values), `add`, and `div`. The program should handle the following cases:  
-- `choice 1` → Perform addition  
-- `choice 2` → Perform division  
-- `choice 0` → Exit  
-- For other choices, print 'Invalid choice'
-
----
+To handle a ZeroDivisionError in Python using a try-except block and display a message: "You can't divide with 0" when an attempt is made to divide by zero.
 
 ### ALGORITHM
 
-1. Begin the program.  
-2. Create a class `Saveetha`.  
-3. Define the following methods inside the `Saveetha` class:  
-   - `__init__(self)`: Initializes `a` and `b` to zero.  
-   - `setvalues(self, a, b)`: Sets the values of `a` and `b`.  
-   - `add(self)`: Performs the addition operation.  
-   - `div(self)`: Performs the division operation. If `b` is zero, returns an error message for division by zero.  
-4. Create a `main()` function.  
-5. Take input from the user for the values of `a` and `b` using `setvalues(a, b)` method.  
-6. Use a `while True` loop to repeatedly ask the user for a choice:  
-   - If the choice is 1, call the `add()` method and print the result.  
-   - If the choice is 2, call the `div()` method and print the result. Handle division by zero.  
-   - If the choice is 0, print "Exiting!" and exit the loop.  
-   - If the choice is not 1, 2, or 0, print "Invalid choice".  
-7. Terminate the program.
+1.Start.
 
----
+2.Input two integers a and b from the user.
+
+3.Try to divide a by b (i.e., c = a / b).
+
+4.If division is successful, print the result c.
+
+5.If b is zero, catch the ZeroDivisionError.
+
+6.Display the message "You can't divide with 0" in case of a ZeroDivisionError.
+
 
 ### PROGRAM
-
+# REG NO:212223090008
+# NAME:Harinishri S
 ```
+a=int(input())
+b=int(input())
+try:
+    c=a/b
+    print(c)
+except ZeroDivisionError:
+    print("You can't divide with 0")
 
 
 
@@ -42,4 +37,19 @@ To write a Python program to perform addition and division operations using a cl
 
 ### OUTPUT
 
+![errorhandling](https://github.com/user-attachments/assets/d3a72ff5-b640-4b56-8de2-f31aabd19257)
+
+
+
+
 ### RESULT
+This represents how the program behaves based on different inputs, handling both valid and invalid division scenarios effectively.
+
+
+
+
+
+
+
+
+
